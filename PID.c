@@ -231,7 +231,11 @@ static short int PID_Common(const PID_Parameter *param, PID_State *state, short 
     dMV = SHRT_MAX;
     state->error_flag = PID_ERROR;
   }
-  dMV = (dMV * param->Kp_num) / param->Kp_den;
+
+  dMV = dMV * param->Kp_num;
+  if (param->Kp_den != 0) {
+    dMV = dMV / param->Kp_den;
+  }
 
   if (dMV < SHRT_MIN) {
     dMV = SHRT_MIN;
