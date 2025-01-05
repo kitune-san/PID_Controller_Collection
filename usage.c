@@ -13,7 +13,7 @@ short int control_target(short int mv)
 int main(void)
 {
   const int time_unit = 10;   // Time-Unit(10) == 0.1ms (EXAMPLE)
-  int ms;
+  int ms = 0;
   short int SV = 0;
   short int PV = 0;
   short int MV = 0;
