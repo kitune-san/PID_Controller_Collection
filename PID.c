@@ -176,7 +176,7 @@ static int Differential_Controller(const PID_Parameter *param, short int history
   if (param->eta_den != 0) {
     div = (int)param->Tc + (param->Td / param->eta_den);
   } else {
-    div = (int)param->Tc + param->Td;
+    div = (int)param->Tc;
   }
   if (div == 0) {
     if (error_flag != NULL) *error_flag = PID_ERROR;
