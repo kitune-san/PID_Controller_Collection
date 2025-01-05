@@ -17,6 +17,11 @@
 $ cc PID.c usage.c && ./a.out
 ```
 
+## Tuning (References)
+- [Ziegler–Nichols method](https://en.wikipedia.org/wiki/Ziegler%E2%80%93Nichols_method)
+- [CHR method](https://ja.wikipedia.org/wiki/PID%E5%88%B6%E5%BE%A1#CHR%E6%B3%95)
+- Step response method
+
 ## License
 [LICENSE.txt](LICENSE.txt)
 
